@@ -1,0 +1,357 @@
+<html>
+	<head>
+<link href="TheBreakfastClubSignup.css" rel="stylesheet">
+	<img src="BC_Logo2.png" class="bc_logo">
+	<h1 align="center">The BreakFast Club Registration</h1>
+	</head>
+
+
+<link href="strong.css" rel="stylesheet">
+
+<! Start of javascript>
+	<script type="text/javascript">
+
+    //function
+    function checkForm(form)
+    {
+      
+      // Username blank check
+    if(form.username_text.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username_text.focus();
+      return false;
+    }
+
+    //if password 1 doesnt equal blank and it's equal to confirm password
+    if(form.password_text.value != "" && form.password_text.value == form.confirm_text.value) {
+      if(form.password_text.value.length < 6) {
+        alert("Error: Password must contain at least six characters!");
+        form.password_text.focus();
+        return false;
+      }
+      
+      // if username and password match
+      if(form.password_text.value == form.username_text.value) {
+        alert("Error: Password must be different from Username!");
+        form.password_text.focus();
+        return false;
+      }
+      
+      // if both passwords match
+      if(form.password_text.value == form.confirm_text.value){
+          alert("You are the man, passwords match!")
+          return false;
+      }
+    } 
+    
+    // if password blank or passwords dont match
+    else {
+      alert("Error: Both passwords must match!");
+      form.password_text.focus();
+      return false;
+      }
+	}
+	</script>
+
+<form onsubmit="return checkForm(this);" name="breakfast_club_registration" method="post" action="html_form_send.php">
+<fieldset class="fieldset_player_information" align="center">
+	<legend class="legend_player_information" align="center">Player Information</legend>
+
+
+<div id="container"align="center">
+  <div id="name">
+    <label>
+      <strong>Name:</strong>
+      <input id="name_text" type="text" placeholder="Name"/>
+    </label>
+  </div>
+  <div id="nickname">
+    <label>
+      <strong>Nickname:</strong>
+      <input id="nickname_text" type="text" placeholder="Nickname"/>
+    </label>
+  </div>
+  <div id="email">
+    <label>
+      <strong>Email Address:</strong>
+      <input id="email_text" type="text" placeholder="Email Address"/>
+    </label>
+  </div>
+  <div id="school">
+    <label>
+      <strong>School:</strong>
+      <input id="school_text" type="text" placeholder="School"/>
+    </label>
+  </div>
+  <div id="birth">
+    <label>
+      <strong>Date of Birth:</strong>
+      <select name="date_of_birth_Month">
+	<option>Month</option>
+	<option value="January">January</option>
+	<option value="Febuary">February</option>
+	<option value="March">March</option>
+	<option value="April">April</option>
+	<option value="May">May</option>
+	<option value="June">June</option>
+	<option value="July">July</option>
+	<option value="August">August</option>
+	<option value="September">September</option>
+	<option value="October">October</option>
+	<option value="November">November</option>
+	<option value="December">December</option>
+</select>
+
+<select name="date_of_birth_day">
+	<option>Day</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>
+
+<select name="date_of_birth_year">
+	<option>Year</option>
+	<option value="2003">2003</option>
+	<option value="2002">2002</option>
+	<option value="2001">2001</option>
+	<option value="2000">2000</option>
+	<option value="1999">1999</option>
+	<option value="1998">1998</option>
+	<option value="1997">1997</option>
+	<option value="1996">1996</option>
+	<option value="1995">1995</option>
+	<option value="1994">1994</option>
+	<option value="1993">1993</option>
+	<option value="1992">1992</option>
+	<option value="1991">1991</option>
+	<option value="1990">1990</option>
+	<option value="1989">1989</option>
+	<option value="1988">1988</option>
+	<option value="1987">1987</option>
+	<option value="1986">1986</option>
+	<option value="1985">1985</option>
+	<option value="1984">1984</option>
+	<option value="1983">1983</option>
+	<option value="1982">1982</option>
+	<option value="1981">1981</option>
+	<option value="1980">1980</option>
+	<option value="1979">1979</option>
+	<option value="1978">1978</option>
+	<option value="1977">1977</option>
+	<option value="1976">1976</option>
+	<option value="1975">1975</option>
+	<option value="1974">1974</option>
+	<option value="1973">1973</option>
+	<option value="1972">1972</option>
+	<option value="1971">1971</option>
+	<option value="1970">1970</option>
+	<option value="1969">1969</option>
+	<option value="1968">1968</option>
+	<option value="1967">1967</option>
+	<option value="1966">1966</option>
+	<option value="1965">1965</option>
+	<option value="1964">1964</option>
+	<option value="1963">1963</option>
+	<option value="1962">1962</option>
+	<option value="1961">1961</option>
+	<option value="1960">1960</option>
+</select>
+
+    </label>
+  </div>
+  <div id="graduation">
+    <label>
+      <strong>Graduation Year:</strong>
+      <input id="graduation_text" type="text" placeholder="Graduation Year"/>
+    </label>
+  </div>
+  <div id="position">
+    <label>
+      <strong>Position:</strong>
+      <input id="midfield" type="checkbox"> Midfield <input id="attack" type="checkbox"> Attack <input id="LSM" type="checkbox"> LSM <input id="defense" type="checkbox"> Defense <input id="goalie" type="checkbox"> Goalie
+    </label>
+  </div>
+
+</div>
+</legend>
+</fieldset>
+
+
+
+
+
+<fieldset class="fieldset_parent_information" align="center">
+	<legend class="legend_parent_information" align="center">Parent/Guardian Information</legend>
+
+<div id="container"align="center">
+  <div id="parent_name">
+    <label>
+      <strong>Name:</strong>
+      <input id="parent_name_text" type="text" placeholder="Name"/>
+    </label>
+  </div>
+  <div id="parent_phone">
+    <label>
+      <strong>Home Phone:</strong>
+      <input id="parent_phone_text" type="text" placeholder="Home Phone"/>
+    </label>
+  </div>
+  <div id="parent_cell">
+    <label>
+      <strong>Cell Phone:</strong>
+      <input id="parent_cell_text" type="text" placeholder="Cell Phone"/>
+    </label>
+  </div>
+  <div id="parent_email">
+    <label>
+      <strong>Email Address:</strong>
+      <input id="parent_email_text" type="text" placeholder="Email Address"/>
+    </label>
+  </div>
+  <div id="parent_address">
+    <label>
+      <strong>Address:</strong>
+      <input id="parent_address_text_1" type="text" placeholder="Street Address"/>
+      <input id="parent_address_text_2" type="text" placeholder="City"/>
+      <input id="parent_address_text_3" type="text" placeholder="Zip Code"/>
+    </label>
+  </div>
+
+</div>
+</legend>
+</fieldset>
+
+
+
+
+
+
+<fieldset class="fieldset_emergency_information" align="center">
+	<legend class="legend_emergency_information" align="center">Emergency Contact Information</legend>
+
+<div id="container"align="center">
+  <div id="emergency_name">
+    <label>
+      <strong>Name:</strong>
+      <input id="emergency_name_text" type="text" placeholder="Name"/>
+    </label>
+  </div>
+  <div id="relation">
+    <label>
+      <strong>Relation to Player:</strong>
+      <input id="relation_text" type="text" placeholder="Relation to Player"/>
+    </label>
+  </div>
+  <div id="emergency_phone">
+    <label>
+      <strong>Phone Number:</strong>
+      <input id="emergency_phone_text" type="text" placeholder="Phone Number"/>
+    </label>
+  </div>
+  <div id="dummy">
+    <label>
+      <strong></strong>
+    </label>
+  </div>
+  <div id="provider">
+    <label>
+      <strong>Insurance Provider:</strong>
+      <input id="provider_text" type="text" placeholder="Insurance Provider"/>
+    </label>
+  </div>
+  <div id="policy">
+    <label>
+      <strong>Insurance Policy #:</strong>
+      <input id="policy_text" type="text" placeholder="Insurance Policy #"/>
+    </label>
+  </div>
+
+</div>
+</legend>
+</fieldset>
+
+
+
+
+
+
+
+<fieldset class="fieldset_account" align="center">
+	<legend class="legend_account" align="center">Setup your Account</legend>
+
+<div id="container"align="center">
+  <div id="comments">
+    <label>
+      <strong></strong>
+      <textarea placeholder="Comments" maxlength="1000" cols="30" rows="5"/></textarea>
+    </label>
+  </div>
+  <div id="username">
+    <label>
+      <strong>Username:</strong>
+      <input id="username_text" type="text" placeholder="Username"/>
+    </label>
+  </div>
+  <div id="password">
+    <label>
+      <strong>Password:</strong>
+      <input id="password_text" type="password" placeholder="Password"/>
+    </label>
+  </div>
+  <div id="confirm">
+    <label>
+      <strong>Confirm Password:</strong>
+      <input id="confirm_text" type="password" placeholder="Confirm Password"/>
+    </label>
+  </div>
+  <div id="dummy">
+    <label>
+      <strong></strong>
+    </label>
+  </div>
+  <div id="button">
+    <label>
+      <strong></strong>
+      <input id="button" align="center" type="submit" value="Submit"/>
+    </label>
+  </div>
+  </div>
+</legend>
+</fieldset>
+<img src="BoxLogo_empty.png" class="bc_logo_empty">
+</form>
+</html>
+
+
+	  
+
+
+

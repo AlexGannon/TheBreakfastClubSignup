@@ -1,0 +1,213 @@
+h1{
+	font-family: cursive;
+	font-size: 50px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.bc_logo{
+	height: 70px;
+	margin-left: 47%;
+}
+
+#container{
+	font-family: HelveticaNeue-Light;
+	
+}
+
+.fieldset_player_information{
+	width: 670px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.legend_player_information{
+	font-size: 120%;
+	font-weight: 500;
+	font-family: HelveticaNeue-Light;
+
+}
+
+label strong{
+	display: inline-block; 
+	width: 140px; 
+	text-align: left; 
+	margin: 0 0 10px;
+	font-weight: normal;
+	
+	}
+	
+#name{
+	float: left;
+}
+
+#nickname{
+	float: right;
+}
+
+#email{
+	float: left;
+	clear:both;
+}
+
+#school{
+	float: right;
+}
+
+#birth{
+	float: left;
+}
+
+#graduation{
+	float: right;
+}
+
+#position{
+	float: left;
+}
+
+.fieldset_parent_information{
+	width: 670px;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+
+.legend_parent_information{
+	font-size: 120%;
+	font-weight: 500;
+	font-family: HelveticaNeue-Light;
+}
+
+#parent_name{
+	float: left;
+}
+
+#parent_phone{
+	float: right;
+}
+
+#parent_cell{
+	float: left;
+}
+
+#parent_email{
+	float: right;
+}
+
+#parent_address{
+	float: left;
+}
+
+.fieldset_emergency_information{
+	width: 670px;
+	margin: auto;
+	margin-bottom: 20px;
+
+}
+
+.legend_emergency_information{
+	font-size: 120%;
+	font-weight: 500;
+	font-family: HelveticaNeue-Light;
+}
+
+#emergency_name{
+	float: left;
+}
+
+#relation{
+	float: right;
+}
+
+#emergency_phone{
+	float: left;
+}
+
+#dummy{
+	float: right;
+}
+
+#provider{
+	float: left;
+	clear: both;
+}
+
+#policy{
+	float: right;
+}
+
+.fieldset_account{
+	width: 670px;
+	margin: auto;
+}
+
+.legend_account{
+	font-size: 120%;
+	font-weight: 500;
+	font-family: HelveticaNeue-Light;
+}
+
+#comments{
+	float: right;
+	clear: both;
+}
+
+#username{
+	float: left;
+	
+}
+
+#password{
+	float: left;
+	
+}
+
+#confirm{
+	float: left;
+
+}
+
+#button{
+	float: left;
+	
+}
+
+.bc_logo_empty{
+	height: 40px;
+	margin-left: 48%;
+	margin-top: 2%;
+}
+
+
+@media only screen and (max-width: 706px){
+	
+
+.fieldset_player_information{
+	width:320px;
+	height:auto;
+	
+}
+
+.fieldset_parent_information{
+	width: 320px;
+	margin: auto;
+}
+
+.fieldset_emergency_information{
+	width: 320px;
+	margin: auto;
+}
+
+.fieldset_account{
+	width: 320px;
+	margin: auto;
+}
+
+#container{
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+}
