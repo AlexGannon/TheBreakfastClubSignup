@@ -1,29 +1,30 @@
 <html>
 	<head>
+<! Link with style sheet >		
 <link href="TheBreakfastClubSignup.css" rel="stylesheet">
+	
 	<img src="BC_Logo2.png" class="bc_logo">
-	<h1 align="center">The BreakFast Club Registration</h1>
+	
+		<h1 align="center">The BreakFast Club Registration</h1>
 	</head>
 
 
-<link href="strong.css" rel="stylesheet">
-
 <! Start of javascript>
-	<script type="text/javascript">
+<script type="text/javascript">
 
     //function
     function checkForm(form)
     {
       
       // Username blank check
-    if(form.username_text.value == "") {
+	  if(form.username_text.value == "") {
       alert("Error: Username cannot be blank!");
       form.username_text.focus();
       return false;
-    }
+    	}
 
-    //if password 1 doesnt equal blank and it's equal to confirm password
-    if(form.password_text.value != "" && form.password_text.value == form.confirm_text.value) {
+	//if password 1 doesnt equal blank and it's equal to confirm password
+	if(form.password_text.value != "" && form.password_text.value == form.confirm_text.value) {
       if(form.password_text.value.length < 6) {
         alert("Error: Password must contain at least six characters!");
         form.password_text.focus();
